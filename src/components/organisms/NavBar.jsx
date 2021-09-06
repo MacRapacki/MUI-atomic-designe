@@ -7,7 +7,7 @@ import NavLogo from "../atoms/NavLogo";
 
 const NavBar = () => {
   return (
-    <AppBar>
+    <AppBar style={{position:"relative"}}>
       <Toolbar
         style={{
           height: "60px",
