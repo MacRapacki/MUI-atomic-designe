@@ -6,7 +6,7 @@ import { Link } from "@material-ui/core";
 
 const NavLogo = () => {
   return (
-    <Link href="#">
+    <Link href="#" style={{ height: "100%" }}>
       <img src={Logo} alt="logo" style={{ height: "100%" }} />
     </Link>
   );
