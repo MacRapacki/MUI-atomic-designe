@@ -5,6 +5,7 @@ import theme from "./utilis/theme";
 
 import NavBar from "./components/organisms/NavBar";
 import CardInfo from "./components/molecules/CardInfo";
+import ServerForm from "./components/organisms/ServerForm";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar />
         <main>
-          <CardInfo />
+          <ServerForm></ServerForm>
+          {/* <CardInfo /> */}
         </main>
       </ThemeProvider>
     </div>

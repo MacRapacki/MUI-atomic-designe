@@ -6,6 +6,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
+    h1: {
+      fontSize: "22px",
+    },
     h2: {
       fontSize: "64px",
     },
