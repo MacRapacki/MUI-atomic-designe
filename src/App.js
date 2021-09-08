@@ -14,7 +14,6 @@ function App() {
         <NavBar />
         <main>
           <ServerForm></ServerForm>
-          {/* <CardInfo /> */}
         </main>
       </ThemeProvider>
     </div>

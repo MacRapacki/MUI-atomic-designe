@@ -1,10 +1,12 @@
 import React from "react";
 
-import { Box, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import theme from "../../../utilis/theme";
 
+import { Box, Link, Typography } from "@material-ui/core";
 import CustomInput from "../../atoms/inputs/CustomInput";
+import AgreeCheckbox from "../../atoms/inputs/AgreeCheckbox";
+import RegisterButton from "../../atoms/buttons/RegisterButton";
 
 const useStyles = makeStyles({
   container: {
@@ -13,6 +15,32 @@ const useStyles = makeStyles({
     padding: "25px",
     border: " 1px solid rgba(0, 0, 0, 0.07)",
   },
+
+  title: {
+    letterSpacing: "1px",
+    fontWeight: 700,
+    margin: 0,
+  },
+
+  subtitle: {
+    marginBottom: "35px",
+    color: theme.palette.grey.label,
+    letterSpacing: "1px",
+  },
+
+  bottomItalicText: {
+    fontSize: "12px",
+    color: theme.palette.grey.label,
+    fontStyle: "italic",
+    opacity: "0.8",
+  },
+
+  bottomItalicTextLink: {
+    "&:hover": {
+      textDecoration: "none",
+      color: "black",
+    },
+  },
 });
 
 const ServerForm = () => {
@@ -20,15 +48,15 @@ const ServerForm = () => {
   return (
     <Box display="flex" justifyContent="center" className={classes.container}>
       <form>
-        <Typography variant="h1" paragraph>
+        <Typography variant="h1" paragraph className={classes.title}>
           GET YOUR{" "}
           <Typography variant="span" color="primary">
             FREE{" "}
           </Typography>
           RADIO SERVER
         </Typography>
-        <Typography variant="subtitle1">
-          {" "}
+
+        <Typography variant="subtitle1" className={classes.subtitle}>
           No Card - 100% Free. Start Your Online Radio Station Today!
         </Typography>
 
@@ -56,6 +84,17 @@ const ServerForm = () => {
           inputId="confPassword"
           type="password"
         />
+        <AgreeCheckbox />
+        <RegisterButton />
+        <Typography className={classes.bottomItalicText}>
+          Free Service Provided by{" "}
+          <Link
+            href="https://fastcast4u.com/"
+            className={classes.bottomItalicTextLink}
+          >
+            Fastcast4u.com
+          </Link>
+        </Typography>
       </form>
     </Box>
   );
