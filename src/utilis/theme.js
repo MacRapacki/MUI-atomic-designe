@@ -3,6 +3,7 @@ import { createTheme } from "@material-ui/core";
 const theme = createTheme({
   palette: {
     primary: { main: "#4772d9" },
+    grey: { label: "#555555" },
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -16,6 +17,7 @@ const theme = createTheme({
       fontSize: "20px",
     },
     subtitle1: { fontSize: "16px" },
+    subtitle2: { fontSize: "13px" },
   },
 });
 

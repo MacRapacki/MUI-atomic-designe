@@ -3,9 +3,9 @@ import React from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "./utilis/theme";
 
-import NavBar from "./components/organisms/NavBar";
+import NavBar from "./components/organisms/navBar/NavBar";
 import CardInfo from "./components/molecules/CardInfo";
-import ServerForm from "./components/organisms/ServerForm";
+import ServerForm from "./components/organisms/serverForm/ServerForm";
 
 function App() {
   return (

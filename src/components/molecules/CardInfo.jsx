@@ -1,26 +1,30 @@
 import React from "react";
 
 import { Paper, Typography, List, ListItem, Link } from "@material-ui/core";
-import { styled } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
 
-const Card = styled(Paper)({
-  width: "100%",
-  maxWidth: "370px",
-  backgroundColor: "#f5f5f5",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: " space-around",
-  alignItems: "center",
-  borderRadius: "3px",
-  boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 1px 0px",
-  margin: "10px 0 24px 0",
-  padding: "20px",
-  textAlign: "center",
+const useStyles = makeStyles({
+  card: {
+    width: "100%",
+    maxWidth: "370px",
+    backgroundColor: "#f5f5f5",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: " space-around",
+    alignItems: "center",
+    borderRadius: "3px",
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 1px 0px",
+    margin: "10px 0 24px 0",
+    padding: "20px",
+    textAlign: "center",
+  },
 });
 
 const CardInfo = () => {
+  const classes = useStyles();
+
   return (
-    <Card>
+    <Paper className={classes.card}>
       <Typography variant="h3" textAlign="center" paragraph>
         <Typography variant="h3" color="primary">
           {" "}
@@ -55,7 +59,7 @@ const CardInfo = () => {
           </Link>{" "}
         </ListItem>
       </List>
-    </Card>
+    </Paper>
   );
 };
 
