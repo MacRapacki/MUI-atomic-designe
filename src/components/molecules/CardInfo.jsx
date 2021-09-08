@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: " space-around",
     alignItems: "center",
+    border: "1px solid rgba(0, 0, 0, 0.075)",
     borderRadius: "3px",
     boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 1px 0px",
     margin: "10px 0 24px 0",
