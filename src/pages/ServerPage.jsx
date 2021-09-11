@@ -1,7 +1,15 @@
 import React from "react";
 
+import ServerSection from "../components/organisms/ServerSection";
+import FaqSection from "../components/organisms/FaqSection";
+
 const ServerPage = () => {
-  return <> </>;
+  return (
+    <>
+      <ServerSection />
+      <FaqSection />{" "}
+    </>
+  );
 };
 
 export default ServerPage;
