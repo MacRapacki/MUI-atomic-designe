@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 import BgImage from "../../images-svg/bg-white.png";
 
 import { Box } from "@material-ui/core";
-import CardInfo from "../molecules/CardInfo";
+import CardInfo from "../molecules/cardInfo/CardInfo";
 import ServerForm from "../molecules/serverForm/ServerForm";
 
 const useStyle = makeStyles({

@@ -10,10 +10,12 @@ import RegisterButton from "../../atoms/buttons/registerButton/RegisterButton";
 
 const useStyles = makeStyles({
   container: {
-    maxWidth: " 520px",
+    width: "100%",
+    minWidth: "300px",
+    maxWidth: "520px",
     backgroundColor: "rgba(251, 251, 251, 0.55)",
     padding: "25px",
-    border: " 1px solid rgba(0, 0, 0, 0.07)",
+    border: "1px solid rgba(0, 0, 0, 0.07)",
   },
 
   title: {

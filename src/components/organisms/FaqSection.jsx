@@ -73,6 +73,7 @@ const FaqSection = () => {
         <Box className={classes.accordionWrapper}>
           <CustomAccordion />
           <CustomAccordion />
+          <CustomAccordion />
         </Box>
       </Box>
     </section>
