@@ -5,7 +5,6 @@ import theme from "../../../utilis/theme";
 
 const useStyles = makeStyles({
   faqButton: {
-    position: "relative",
     height: "40px",
     fontSize: "16px",
     padding: "15px",
@@ -14,13 +13,12 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     fontWeight: "600",
-    border: "none",
+    border: "1px solid transparent",
     backgroundColor: "transparent",
     cursor: "pointer",
     textAlign: "center",
 
     "&.active": {
-      position: "relative",
       color: theme.palette.primary.main,
 
       "&:focus": {
