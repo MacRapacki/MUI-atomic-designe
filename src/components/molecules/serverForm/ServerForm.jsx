@@ -6,7 +6,7 @@ import theme from "../../../utilis/theme";
 import { Box, Link, Typography } from "@material-ui/core";
 import CustomInput from "../../atoms/inputs/CustomInput";
 import AgreeCheckbox from "../../atoms/inputs/AgreeCheckbox";
-import RegisterButton from "../../atoms/buttons/RegisterButton";
+import RegisterButton from "../../atoms/buttons/registerButton/RegisterButton";
 
 const useStyles = makeStyles({
   container: {

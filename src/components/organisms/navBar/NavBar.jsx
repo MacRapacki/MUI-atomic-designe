@@ -2,7 +2,7 @@ import React from "react";
 
 import { AppBar, Toolbar } from "@material-ui/core";
 
-import LoginButton from "../../atoms/buttons/LoginButton";
+import LoginButton from "../../atoms/buttons/loginButton/LoginButton";
 import NavLogo from "../../atoms/NavLogo";
 import { makeStyles } from "@material-ui/styles";
 

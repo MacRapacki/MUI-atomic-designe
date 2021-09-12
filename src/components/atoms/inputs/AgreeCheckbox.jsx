@@ -31,8 +31,12 @@ const useStyle = makeStyles({
   },
 
   labelLink: {
-    textDecoration: "none",
     cursor: "pointer",
+
+    "&:hover": {
+      textDecoration: "none",
+      color: "black",
+    },
   },
 });
 
@@ -44,7 +48,12 @@ const AgreeCheckbox = () => {
       <label ftmlFor="checkobox">
         <Typography variant="subtitle2" className={classes.labelName}>
           I Agree To{" "}
-          <Link href="https://freeshoutcast.com/tos">The Terms Of Service</Link>
+          <Link
+            href="https://freeshoutcast.com/tos"
+            className={classes.labelLink}
+          >
+            The Terms Of Service
+          </Link>
         </Typography>
       </label>
     </FormControl>

@@ -19,6 +19,13 @@ const useStyles = makeStyles({
     padding: "20px",
     textAlign: "center",
   },
+
+  cardLink: {
+    "&:hover": {
+      textDecoration: "none",
+      color: "black",
+    },
+  },
 });
 
 const CardInfo = () => {
@@ -55,7 +62,7 @@ const CardInfo = () => {
           <Typography variant="subtitle1">LiveChat Support</Typography>
         </ListItem>
         <ListItem style={{ display: "flex", justifyContent: "center" }}>
-          <Link href="#">
+          <Link href="#" className={classes.cardLink}>
             <Typography>and more...</Typography>
           </Link>{" "}
         </ListItem>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 
 import { Box } from "@material-ui/core";
-import FaqButton from "../atoms/buttons/FaqButton";
+import FaqButton from "../atoms/buttons/faqButton/FaqButton";
 
 const useStyles = makeStyles({
   section: {

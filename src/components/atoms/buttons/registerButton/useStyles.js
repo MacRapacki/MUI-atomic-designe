@@ -1,9 +1,5 @@
-import React from "react";
-
 import { makeStyles } from "@material-ui/styles";
-import theme from "../../../utilis/theme";
-
-import { Button, Typography } from "@material-ui/core";
+import theme from "../../../../utilis/theme";
 
 const useStyles = makeStyles({
   registerButton: {
@@ -24,20 +20,9 @@ const useStyles = makeStyles({
     },
   },
 
-  button: {
+  buttonText: {
     fontWeight: "bold",
   },
 });
 
-const RegisterButton = () => {
-  const classes = useStyles(theme);
-  return (
-    <Button className={classes.registerButton}>
-      <Typography variant="subtitle1" className={classes.button}>
-        REGISTER NOW
-      </Typography>
-    </Button>
-  );
-};
-
-export default RegisterButton;
+export default useStyles;

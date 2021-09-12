@@ -1,7 +1,5 @@
-import React from "react";
-
 import { makeStyles } from "@material-ui/styles";
-import theme from "../../../utilis/theme";
+import theme from "../../../../utilis/theme";
 
 const useStyles = makeStyles({
   faqButton: {
@@ -28,23 +26,4 @@ const useStyles = makeStyles({
   },
 });
 
-const FaqButton = ({ name, index, setActiveButton, activeButton }) => {
-  const handleButton = (index) => {
-    setActiveButton(index);
-  };
-
-  const classes = useStyles(theme);
-
-  return (
-    <button
-      className={`${classes.faqButton} ${
-        index === activeButton ? "active" : ""
-      }`}
-      onClick={() => handleButton(index)}
-    >
-      {name}
-    </button>
-  );
-};
-
-export default FaqButton;
+export default useStyles;
