@@ -4,11 +4,13 @@ import { makeStyles, Typography } from "@material-ui/core";
 
 import { Box } from "@material-ui/core";
 import FaqButton from "../atoms/buttons/faqButton/FaqButton";
+import CustomAccordion from "../atoms/accordion/CustomAccordion";
 
 const useStyles = makeStyles({
   section: {
     width: "100%",
     backgroundColor: "#f9f9f9",
+    paddingBottom: "30px",
   },
   buttonsWrapper: {
     position: "relative",
@@ -18,6 +20,15 @@ const useStyles = makeStyles({
     flexWrap: "wrap",
     marginBottom: "50px",
     padding: " 40px 20px 25px 20px",
+  },
+
+  accordionWrapper: {
+    width: "100%",
+    marginBottom: "0",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
 });
 
@@ -58,6 +69,10 @@ const FaqSection = () => {
               />
             );
           })}
+        </Box>
+        <Box className={classes.accordionWrapper}>
+          <CustomAccordion />
+          <CustomAccordion />
         </Box>
       </Box>
     </section>
